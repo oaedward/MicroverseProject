@@ -9,13 +9,26 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Please fill the survey form below and submit</p>
     <form id="survey-form">
-    <h2> Survey Form </h2>
-    <input type="text" id="name" placeholder="Lynda" required />
-    <input type="email" id="email" placeholder="salemlinda18@gmail.com" required />
-    <input type="number" id="number" />
-
-
-  </form>
-
+      <h2>Survey Form</h2>
+      <div>
+        <div>
+          <label id="name-label">Name *</label>
+          <input type="text" id="name" placeholder="Lynda" required />
+        </div>
+        <div>
+          <label id="email-label">Email *</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="salemlinda18@gmail.com"
+            required
+          />
+        </div>
+        <div>
+          <label id="number-label">Number</label>
+          <input type="number" id="number" min="0" max="10" />
+        </div>
+      </div>
+    </form>
   </body>
 </html>
