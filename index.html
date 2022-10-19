@@ -3,20 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>firstPage</title>
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Please fill the survey form below and submit</p>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill the survey form below and submit</p>
+    </div>
     <form id="survey-form">
       <h2>Survey Form</h2>
       <div>
-        <div>
-          <label id="name-label">Name *</label>
-          <input type="text" id="name" placeholder="Please Enter Your Name" required />
+        <div class="space">
+          <label id="name-label">Name: *</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Please Enter Your Name"
+            required
+          />
         </div>
-        <div>
-          <label id="email-label">Email *</label>
+        <div class="space">
+          <label id="email-label">Email: *</label>
           <input
             type="email"
             id="email"
@@ -24,41 +32,55 @@
             required
           />
         </div>
-        <div>
-          <label id="number-label">Number</label>
-          <input type="number" id="number" min="0" max="10" placeholder="Please enter a number between 0 and 10"  />
+        <div class="space">
+          <label id="number-label">Number:</label>
+          <input
+            type="number"
+            id="number"
+            min="0"
+            max="10"
+            placeholder="Please enter a number between 0 and 10"
+          />
         </div>
-        <div>
-          <label> Please Select One Option ! </label><br>
-          <select id="dropdown"> 
-            <option>
-              Choice 01
-            </option>
-            <option>
-              Choice 02
-            </option>
+        <div class="space">
+          <label> Please Select One Option ! </label><br />
+          <select id="dropdown">
+            <option>Choice 01</option>
+            <option>Choice 02</option>
           </select>
-          <div>
-              <label> Please Choose one Option Below</label>
-              <br>
-              <input type="radio" name="gender" value="Male"> Male
-              <input type="radio" name="gender" value="Female"> Female
+          <div class="space">
+            <label> Please Choose one Option Below</label>
+            <br />
+            <input type="radio" name="gender" value="Male" /> Male
+            <input
+              class="input-radio"
+              type="radio"
+              name="gender"
+              value="Female"
+            />
+            Female
           </div>
-        <div>
-          <label> Please Choose one Option or more Below</label>
-          <br>
-              <input type="checkbox" name="language" value="English"> English
-              <input type="checkbox" name="language" value="French"> French
-              <input type="checkbox" name="language" value="Arabic"> Arabic
-
+          <div class="space">
+            <label> Please Choose one Option or more Below</label>
+            <br />
+            <input type="checkbox" name="language" value="English" /> English
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="language"
+              value="French"
+            />
+            French
+            <input type="checkbox" name="language" value="Arabic" /> Arabic
+          </div>
+          <div class="space">
+            <label> Please type your comments below</label>
+            <br />
+            <textarea class="input-textarea"> Comments </textarea>
+            <br />
+          </div>
+          <button type="button" id="submit">Submit</button>
         </div>
-        <div>
-          <label> Please type your comments below</label>
-          <textarea> Comments </textarea>
-          <br>
-        </div>
-          <button id="submit">Submit</button>
-            </div>
       </div>
     </form>
   </body>
